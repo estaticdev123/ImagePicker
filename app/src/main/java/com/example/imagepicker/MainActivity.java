@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
         initialization();
 
 
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         imagePicker = new ImagePicker();
         imagePicker.setTitle("Select Image");
         imagePicker.setCropImage(true);
-
         binding.btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
